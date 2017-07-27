@@ -56,7 +56,7 @@ monitor = DVI-0
 [module/date]
 type = internal/date
 interval = 1.0
-date = %a %b %d,
+date = %a %b %d
 time = %I:%M:%S %p
 
 label = %date% %time%
