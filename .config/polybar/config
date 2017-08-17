@@ -19,9 +19,9 @@ underline-color = #eee
 
 spacing = 1
 padding-left = 0
-padding-right = 2
-module-margin-left = 0
-module-margin-right = 0
+padding-right = 0
+module-margin-left = 2
+module-margin-right = 2
 
 font-0 = fixed:pixelsize=10;1
 font-1 = FontAwesome:size=10;-2
@@ -29,7 +29,7 @@ font-2 = siji:pixelsize=10;1
 
 modules-left = i3
 modules-center = 
-modules-right = date
+modules-right = memory date
 
 scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
@@ -95,6 +95,12 @@ label-visible-padding = 2
 label-urgent = %index%
 label-urgent-underline = #ff3f3d
 label-urgent-padding = 2
+
+
+[module/memory]
+type = internal/memory
+
+label = RAM %percentage_used%% F%gb_free%
 
 
 [settings]
